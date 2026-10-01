@@ -1,6 +1,6 @@
 "use client";
 
-import { updateUser } from "@/lib/auth-client";
+import { updateUser } from "../../../lib/auth-client";
 import { FloppyDisk } from "@gravity-ui/icons";
 import {
   Button,

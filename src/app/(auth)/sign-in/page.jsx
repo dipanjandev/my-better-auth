@@ -1,7 +1,7 @@
 "use client";
 
 import { Eye, EyeSlash } from "@gravity-ui/icons";
-import { authClient } from "@/lib/auth-client";
+import { authClient } from "../../../lib/auth-client";
 import {
   Button,
   Description,
@@ -13,6 +13,7 @@ import {
   TextField,
 } from "@heroui/react";
 import { useState } from "react";
+import Link from "next/link";
 
 const SignInPage = () => {
   const onSubmit = async (e) => {
@@ -85,9 +86,9 @@ const SignInPage = () => {
               {/* <Check /> */}
               Submit
             </Button>
-            <Button type="reset" variant="secondary">
-              Reset
-            </Button>
+            <Link href="/forgot-password">
+              <Button variant="secondary">Forgot Password</Button>
+            </Link>
           </div>
         </Form>
       </div>

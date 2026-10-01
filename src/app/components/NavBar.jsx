@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { Link, Button, Spinner } from "@heroui/react";
-import { signOut, useSession } from "@/lib/auth-client";
+import { signOut, useSession } from "../../lib/auth-client";
+// import { signOut, useSession } from "@/lib/auth-client";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

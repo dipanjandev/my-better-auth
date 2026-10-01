@@ -10,7 +10,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
-import { signIn, signUp } from "@/lib/auth-client";
+import { signIn, signUp } from "../../../lib/auth-client";
 
 const SignUpPage = () => {
   const onSubmit = async (e) => {
@@ -24,7 +24,7 @@ const SignUpPage = () => {
       email: data.email,
       password: data.password,
     });
-    // console.log(resData, error, "ResData Check");
+    console.log(resData, error, "After Signup");
   };
   const handleSignInWithGoogle = async () => {
     const data = await signIn.social({
