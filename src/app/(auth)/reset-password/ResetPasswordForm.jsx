@@ -30,7 +30,6 @@ const ResetPasswordForm = () => {
     });
     toast.success("Your Password Reset Successfully");
   };
-
   return (
     <div>
       <h1>Now Give me Your password</h1>
@@ -54,7 +53,7 @@ const ResetPasswordForm = () => {
           }}
         >
           <Label>Password</Label>
-          <Input placeholder="Enter your password" />
+          <Input placeholder="Please Enter your password" />
           <Description>
             Must be at least 8 characters with 1 uppercase and 1 number
           </Description>
